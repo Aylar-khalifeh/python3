@@ -1,23 +1,30 @@
 تمرین‌های Python حلقه  List Comprehension
 
 تمرین 1
-
 یک لیست شامل اعداد زیر بسازید
-
 10, 20, 30, 40, 50
-
 سپس:
 طول لیست را چاپ کنید
 کوچک‌ترین عدد را چاپ کنید
 بزرگ‌ترین عدد را چاپ کنید
+#حل:
+numbers=[10,20,30,40,50]
+print(f"lenght:{len(numbers)}")
+print(f"min:" + str(min(numbers)))
+print(f"max:" + str(max(numbers)))
+
+
 
 
 تمرین 2
-
 بررسی کنید
-
 آیا عدد 30
 داخل لیست وجود دارد یا نه
+#حل:
+numbers=[10,20,30,40,50]
+print(30 in numbers)
+
+
 
 
 تمرین 3
@@ -25,25 +32,66 @@
 سپس:
 تکراری‌ها را حذف کنید
 لیست را مرتب چاپ کنید
+#حل:
+numbers=[5,20,6,5,12,9]
+print(sorted(set(numbers)))
+
+
+
 
 تمرین 4
 از یک لیست سه عضو وسط را با 
 slicing جدا کنید
+#حل:
+numbers=[5,20,'ali','sara',12,9]
+numbers_new=numbers [2:4]
+print(numbers_new)
+
+
 
 تمرین 5
 یک لیست شامل نام 5 دانشجو بسازید و با حلقه 
 به هر دانشجو خوش‌آمد بگویید
+#حل:
+students=['ali','reza','arash','sara','zahra']
+for i in students:
+    print(f"Hello{i} welome to our class")
+
+
 
 
 تمرین 6
 توان سوم اعداد 1 تا 10 را محاسبه کنید
+#حل:
+tavan=[value**3 for value in range(1,11)]
+print(tavan)
+
+
 
 تمرین 7
 مجموع اعداد داخل یک لیست را با حلقه  حساب کنید
+#حل:
+numbers=[25,13,10,4,50]
+sum=0
+for i in numbers:
+    sum=sum+i  #sum+=i
+print(sum)
+
+
+
 
 تمرین 6
 با List Comprehension
 لیست مربع اعداد 1 تا 20 را بسازید
+#حل:
+squares=[value**2 for value in range(1,21)]
+print(squares)
+
+
+
 
 تمرین 7
 اعداد زوج بین 1 تا 50 را با List Comprehension تولید کنید
+#حل:
+numbers=[x for x in range(1,51) if x%2==0]
+print(numbers)
