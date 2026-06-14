@@ -65,12 +65,12 @@ Task:
 4-فروشگاه آنلاین
 
 store = {
-    "Ali": [
+    "am": [
         {"name": "Laptop", "price": 1200},
         {"name": "Mouse", "price": 50},
     ],
 
-    "Sara": [
+    "ap": [
         {"name": "Phone", "price": 800},
         {"name": "Headphone", "price": 100},
     ]
