@@ -84,7 +84,54 @@ for alien in aliens[:3]:
 for alien in aliens[:5]:
     print(alien)
 
+
+
 print("...")
 
 # نمایش تعداد کل بیگانگان ساخته شده
 print(f"تعداد کل بیگانگان: {len(aliens)}")
+
+
+
+
+alien = {'color':'green', 'point':5}
+alien['score'] = 6
+print(alien)
+a = {}
+a['c'] = (1,2)
+print(a)
+
+satellite = {'x':2, 'y':4, 'speed':'medium'}
+print("Original position:" + str(satellite['x'])+ "," + str(satellite['y']))
+
+if satellite['speed'] == 'slow':
+    x_increment = 1
+    y_increment = 1
+elif satellite['speed'] == 'medium':
+    x_increment = 3
+    y_increment = 4
+else:
+    x_increment = 5
+    y_increment = 6
+
+print("New position:\nspeed = " + satellite['speed'])
+x_1 = satellite['x'] + x_increment 
+y_1 = satellite['y'] + y_increment
+print(str(x_1) + "," + str(y_1))
+
+for value in satellite.values():
+    print(value)
+
+#print(satellite.get("x"))
+#print(satellite.pop('y'))
+#print(satellite)
+#print(satellite.get("phone", "Not Found"))
+
+satellite = {
+    "name": {"EO-1":4},
+    "sensors": ["IR", "RGB", "SAR"],
+    "s": {"e":[1,5]}
+}
+print(satellite["sensors"][1])
+print(satellite['name']['EO-1'])
+print(satellite['s']['e'][0])
